@@ -153,3 +153,16 @@
   {
     border-top: 1px solid #dddddd !important;
   }
+
+/* APPLE ICON */
+/* In order to use use the tree icon in snow. */
+
+.icon-tree
+{
+    background-image: url("https://logodix.com/logo/19234.png");
+}
+
+.icon-tree:before
+{
+    content: none;
+}
