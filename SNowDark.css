@@ -166,3 +166,8 @@
 {
     content: none;
 }
+
+.sn-frameset-header #sysparm_search.focus
+{
+    background-color: #405264 !important;   
+}
