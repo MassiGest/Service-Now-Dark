@@ -167,7 +167,31 @@
     content: none;
 }
 
+/* Search bar */
 .sn-frameset-header #sysparm_search.focus
 {
     background-color: #405264 !important;   
+}
+
+
+/* Button's at Incident page */
+
+.btn-group>* {
+    background-color: #323f50 !important;
+    border-right: 1px solid #182838 !important;
+}
+
+.btn-group>*:hover {
+    background-color: #405264 !important;
+    border-right: 1px solid #182838 !important;
+}
+
+.form_action_button{
+    background-color: #323f50 !important;
+    border: 1px solid #182838 !important;
+}
+
+.form_action_button:hover{
+    background-color: #405264 !important;
+    border: 1px solid #405264 !important;
 }
