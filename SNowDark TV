@@ -1,0 +1,594 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - MAIN VARIABLES */
+:root {
+    --BG1: #182838;
+    --BG2: #323f50;
+    --BG3: #4d5867;
+    --BG4: #405264;
+    --BG5: #2c3746;
+    --BG6: #fd5e03;
+    --TXT1: #ffffff;
+    --TXT2: #008aff;
+    --Bradius: 5px;
+    /* Test color*/
+    --t: yellow;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ALL */
+/* Make all placeholders the light text color */
+*::placeholder {
+    color: var(--TXT1) !important;
+}
+
+/* Remove all weird shaows, because that was f*ugly */
+* {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* Set bright white color to lesser white color*/
+.color-white {
+    color: var(--TXT1) !important;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - NOTIFICATION BANNER */
+/* Banner body */
+.outputmsg,
+.fieldmsg {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* Message link */
+.web {
+    color: var(--TXT2) !important;
+}
+
+/* Close button */
+#close-messages-btn {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+    margin: 0px !important;
+    margin-right: 5px !important;
+    margin-top: 1px !important;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - TOP NAVBAR */
+/* Hide top bar */
+.navbar.navbar-default.sn-frameset-header {
+    background-image: url(https://gestdevelopment.com/wps.png);
+    background-repeat: no-repeat;
+    height: 196px !important;
+    background-color: white !important;
+    background-size: 1280px !important;
+}
+
+.navbar.navbar-default.sn-frameset-header>div, .navbar-divider{
+    display: none !important;
+    
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - SIDE NAV */
+/* Hide navbar */
+.navpage-nav {
+    display: none !important;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - TOP TASK NAV */
+/* Hide task navbar */
+#list_nav_task,
+.breadcrumb_container,
+#hdr_task {
+    display: none !important;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - TASK LIST */
+/* Hide border at top of list*/
+.list2_no_records > td {
+    border: none !important;
+}
+
+/* Hide bottom navbar and time icon */
+.list_nav.list_nav_bottom, #page_timing_div {
+    display: none !important;
+}
+
+/* Increase task list size */
+main.navpage-main {
+    left: 0px !important;
+    top: 196px !important;
+}
+
+/* Task list background */
+.windows.chrome {
+    background-color: var(--BG2) !important;
+}
+
+/* Empty record notice */
+.list2_no_records {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+}
+
+.list2_no_records > td:hover {
+    background-color: var(--BG2) !important;
+}
+
+/* List row */
+.datex.date-timeago,
+.list_row > * > *,
+.list_row > * {
+    color: var(--TXT1) !important;
+    background-color: var(--BG6) !important;
+}
+
+.list_row > * {
+    border: none !important;
+    border-bottom: 1px solid var(--BG2) !important;
+}
+
+.list_row.hover > * > *,
+.list_row.hover > * {
+    background-color: var(--BG6) !important;
+}
+
+.list_decoration_cell.col-control.col-small.col-center {
+    border-left: 1px solid var(--BG2) !important;
+}
+
+/* Bottom task actions */
+#task_expanded > div,
+.list_nav.list_nav_bottom > * > * {
+    background-color: var(--BG1) !important;
+}
+
+/* Action menu */
+.list_action_option.form-control {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+    border-radius: var(--Bradius) !important;
+}
+
+/* Task expand button */
+.list_popup, .list_decoration_cell.col-control.col-small.col-center  {
+    display: none !important;
+}
+
+.list_popup:hover {
+    background-color: var(--BG2) !important;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - FORM HEADER */
+/* Form header */
+#incident\.form_header > * > * > *,
+.navbar.navbar-default.section_zero.ng-scope {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* Header buttons */
+.additional-actions-context-menu-button,
+.btn.btn-default.icon-chevron-left.navbar-btn,
+#connectFollowWidgetAction,
+.btn.btn-default.default-focus-outline.dropdown-toggle,
+#sysverb_update,
+#sysverb_update_bottom,
+#incident_update_and_stay,
+#header_add_attachment,
+#form_stream,
+#toggleMoreOptions,
+.btn.btn-icon.icon-arrow-up,
+.btn.btn-icon.icon-arrow-down,
+.form_action_button.header.action_context.btn.btn-default {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+    height: 25px !important;
+}
+
+.additional-actions-context-menu-button:hover,
+.btn.btn-default.icon-chevron-left.navbar-btn:hover,
+#connectFollowWidgetAction:hover,
+.btn.btn-default.default-focus-outline.dropdown-toggle:hover,
+#sysverb_update:hover,
+#sysverb_update_bottom:hover,
+#incident_update_and_stay:hover,
+#header_add_attachment:hover,
+#form_stream:hover,
+#toggleMoreOptions:hover,
+.btn.btn-icon.icon-arrow-up:hover,
+.btn.btn-icon.icon-arrow-down:hover,
+.form_action_button.header.action_context.btn.btn-default:HOVER {
+    background-color: var(--BG4) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - FORM */
+/* Labels */
+.label-text {
+    color: var(--TXT1) !important;
+}
+
+/* Text fields */
+.form-control {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* Form buttons */
+button[id^='lookup'],
+a[id^='lookup'],
+button[id^='viewr'],
+button[id^='sc_req_item'],
+span[id^='show_map'],
+a[id^='show_incidents'],
+a[id^='ni'],
+.btn.btn-default.icon-book.knowledge,
+.icon-stream-one-input.btn-default.btn,
+#activity_field_filter_button,
+button[id^='add_me_locked'] {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+    height: 25px !important;
+    width: 25px !important;
+}
+
+button[id^='lookup']:hover,
+a[id^='lookup']:hover,
+button[id^='viewr']:hover,
+button[id^='sc_req_item']:hover,
+span[id^='show_map']:hover,
+a[id^='show_incidents']:hover,
+a[id^='ni']:hover,
+.btn.btn-default.icon-book.knowledge:hover,
+.icon-stream-one-input.btn-default.btn:hover,
+#activity_field_filter_button:hover,
+button[id^='add_me_locked']:hover {
+    background-color: var(--BG4) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* Disabled fields */
+.form-control.disabled {
+    background-color: var(--BG3) !important;
+    border: none !important;
+    color: var(--TXT1) !important;
+    cursor: default;
+}
+
+/* Notes/Comments */
+.comment-box {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* Header attachment list */
+#header_attachment_list > * > * > *,
+#header_attachment_list > * > * {
+    color: var(--TXT2) !important;
+}
+
+/* Header attachment line */
+#header_attachment_line {
+    display: none !important;
+}
+
+/* Remove vip icon */
+[style="background-image: url(\"images/icons/vip.gif\"); background-repeat: no-repeat; background-position: 5% 45%; padding-left: 30px;"] {
+    background-image: none !important;
+}
+
+/* Highlighted field */
+.form-control[style="color: red;"] {
+    color: var(--BG1) !important;
+    background: rgb(111, 209, 90);
+    background: linear-gradient(90deg, rgba(111, 209, 90, 1) 0%, rgba(50, 63, 80, 1) 90%);
+}
+
+/* Post coment button */
+.btn.btn-default.pull-right.activity-submit {
+    background-color: var(--BG2) !important;
+}
+
+.btn.btn-default.pull-right.activity-submit:hover {
+    background-color: var(--BG4) !important;
+}
+
+/* Item list (Comments/Vars/ETC) buttons*/
+.tabs2_tab {
+    background-color: var(--BG2) !important;
+    border: none !important;
+    border-radius: 3px !important;
+    margin-right: 5px !important;
+    padding: 2px !important;
+}
+
+.tabs2_tab > * {
+    color: var(--TXT1) !important;
+}
+
+.tabs2_tab:hover {
+    background-color: var(--BG4) !important;
+}
+
+/* Comment list */
+.sn-form-stream-init {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+}
+
+/* Comment list box border */
+.section {
+    border: none !important;
+}
+
+/* Comment card*/
+.h-card.h-card_md.h-card_comments,
+.sn-card-component-createdby,
+.sn-card-component,
+.date-timeago,
+.sn-card-component.sn-card-component_records > * > * > * > *,
+.sn-widget-textblock-body.sn-widget-textblock-body_formatted {
+    border: none !important;
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+}
+
+.stream-action {
+    color: var(--TXT2) !important;
+}
+
+/* Variables header */
+.veditor_header {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    margin: 0px !important;
+}
+
+/* Variables body */
+.veditor_body,
+.veditor_body > * > *,
+.wide.sc_editor > * > * > * > * > * > * > * {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+div[id^='label_ni'] > nav {
+    display: none !important;
+}
+
+/* Related links article*/
+.related_links {
+    color: var(--TXT1) !important;
+}
+
+/* Related links list box */
+.list_span_related {
+    background-color: var(--BG1) !important;
+    border: none !important;
+}
+
+/* Related links header */
+[id^='list_nav_sc_req_item'],
+[id^='hdr_sc_req_item'],
+[id^='hdr_sc_req_item'] > * > * > *,
+[id^='list_nav_incident'],
+[id^='hdr_incident'],
+[id^='hdr_incident'] > * > * > * {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* Related search results */
+.custom-form-group.form-group.ng-scope > table > * > * > *,
+.custom-form-group.form-group.ng-scope > table > * > * > * > * > * > * > * {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+}
+
+/* Related search results button */
+#cxs_maximize_results {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+#cxs_maximize_results:hover {
+    background-color: var(--BG4) !important;
+    color: var(--TXT1) !important;
+}
+
+/* Seperator */
+.horizontal-rule {
+    display: none !important;
+}
+
+/* Attatch buttons */
+.btn.btn-default.cxs_attach {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+.btn.btn-default.cxs_attach:hover {
+    background-color: var(--BG4) !important;
+    color: var(--TXT1) !important;
+}
+
+/* Result link/title */
+.cxs_result {
+    color: var(--TXT2) !important;
+}
+
+/* Results */
+#cxs_results_container > table > tbody > tr {
+    background-color: var(--t) !important;
+    padding: 50px !important;
+}
+
+/* Pop-up form */
+.popover,
+.popover-content,
+.popover-header,
+.popover-title {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* Pop-up buttton */
+.btn.btn-sm.btn-default.pop-over-button.pull-right {
+    background-color: var(--BG2) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+.btn.btn-sm.btn-default.pop-over-button.pull-right:hover {
+    background-color: var(--BG4) !important;
+}
+/* Pop-up arrow */
+.arrow {
+    display: none !important;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  ACTIVITY MENU*/
+/* Activity header */
+.list_stream_plank_header {
+    background-color: var(--BG5) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+    border-top-left-radius: var(--Bradius) !important;
+    border-bottom-left-radius: var(--Bradius) !important;
+}
+
+/* Activity menu background */
+.h-card-wrapper.ng-scope.h-card-wrapper_selectable.activities-list {
+    background-color: var(--BG5) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+#list_stream_reader_frame {
+    border: none !important;
+}
+
+/* Close button */
+#list_stream_reader_close_button {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+}
+
+#list_stream_reader_close_button:hover {
+    background-color: var(--BG4) !important;
+}
+
+/* Activity list */
+.h-card.h-card_md.h-card_comments.ng-scope {
+    background-color: var(--BG2) !important;
+    border: none !important;
+}
+
+.h-card.h-card_md.h-card_comments.ng-scope > * > *,
+.h-card.h-card_md.h-card_comments.ng-scope > * > * > *,
+.h-card.h-card_md.h-card_comments.ng-scope > * > * > * > * > * > * {
+    color: var(--TXT1) !important;
+}
+
+/* Activity item info */
+.list-stream-record-header {
+    background-color: var(--BG5) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+/* Back button */
+.btn.btn-default.icon-chevron-left.navbar-btn.return-to-stream {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+}
+
+.btn.btn-default.icon-chevron-left.navbar-btn.return-to-stream:hover {
+    background-color: var(--BG4) !important;
+}
+
+/* Open record button */
+.pull-right.btn.btn-default.open-record-from-stream {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+.pull-right.btn.btn-default.open-record-from-stream:hover {
+    background-color: var(--BG4) !important;
+}
+
+/* Quick comment box */
+textarea.form-control.ng-pristine.ng-valid.ng-touched {
+    background-color: var(--BG1) !important;
+}
+
+/* Quick comment buttons */
+.btn.btn-default.pull-right.sn-card-component-form-control {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+.btn.btn-default.pull-right.sn-card-component-form-control:hover {
+    background-color: var(--BG4) !important;
+}
+
+/* Comment input field */
+.record-inputs-pad {
+    background-color: var(--BG5) !important;
+    color: var(--TXT1) !important;
+}
+
+.record-inputs {
+    background-color: var(--BG5) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+.record-inputs > form > .comment-box.container-fluid.sn-form-stream-input-area {
+    background-color: var(--BG5) !important;
+}
+
+/* Submit button */
+.btn.btn-default.activity-submit {
+    background-color: var(--BG1) !important;
+    color: var(--TXT1) !important;
+    border: none !important;
+}
+
+.btn.btn-default.activity-submit:hover {
+    background-color: var(--BG4) !important;
+}
+
+/* Comment list */
+.h-card-wrapper.ng-scope.activities-form {
+    background-color: var(--BG5) !important;
+}
+
+.stream-in-frame.list-stream-record.doctype-record-stream.ng-scope {
+    background-color: var(--BG5) !important;
+    height: 5000px !important;
+}
